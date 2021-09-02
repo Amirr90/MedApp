@@ -307,7 +307,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
 
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="@dimen/_100sdp"
                         android:layout_marginTop="30dp"
                         android:background="@drawable/round_corners"
                         android:backgroundTint="#F0F0F0"
@@ -321,6 +321,7 @@
                             android:layout_width="@dimen/_40sdp"
                             android:layout_height="@dimen/_40sdp"
                             android:src="@drawable/icon_medicine"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -396,7 +397,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
 
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="@dimen/_100sdp"
                         android:layout_marginTop="30dp"
                         android:background="@drawable/round_corners"
                         android:backgroundTint="#F0F0F0"
@@ -410,6 +411,7 @@
                             android:layout_width="@dimen/_45sdp"
                             android:layout_height="@dimen/_45sdp"
                             android:src="@drawable/icon_blood_test"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
