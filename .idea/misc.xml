@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/LENOVO/StudioProjects/MedApp/app/src/main/res/drawable/ic_menu_24dp.xml" value="0.189" />
+        <entry key="..\:/Users/LENOVO/StudioProjects/MedApp/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/LENOVO/StudioProjects/MedApp/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/LENOVO/StudioProjects/MedApp/app/src/main/res/menu/bottom_app_bar.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
     <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
