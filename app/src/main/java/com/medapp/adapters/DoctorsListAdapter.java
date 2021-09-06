@@ -42,4 +42,6 @@ public class DoctorsListAdapter extends ListAdapter<Doctor, AppViewHolder> {
             return oldItem.equals(newItem);
         }
     };
+
+
 }

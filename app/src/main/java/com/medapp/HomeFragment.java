@@ -8,13 +8,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import com.medapp.adapters.DoctorsListAdapter;
 import com.medapp.databinding.FragmentHomeBinding;
-import com.medapp.modal.Doctor;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.medapp.utils.AppUtils;
 
 
 public class HomeFragment extends Fragment {
@@ -35,20 +33,15 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         initAdapter();
+
+        binding.constraintLayout2.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_chooseHealthConcernFragment2));
     }
 
     private void initAdapter() {
 
         doctorsListAdapter = new DoctorsListAdapter();
-        doctorsListAdapter.submitList(getDemoList());
+        doctorsListAdapter.submitList(AppUtils.getDemoDocList());
         binding.recDocList.setAdapter(doctorsListAdapter);
     }
 
-    private List<Doctor> getDemoList() {
-        List<Doctor> doctors = new ArrayList<>();
-        for (int a = 0; a < 10; a++) {
-            doctors.add(new Doctor("Hari Prasad", "Speciality"));
-        }
-        return doctors;
-    }
 }

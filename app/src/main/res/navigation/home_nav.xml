@@ -9,5 +9,42 @@
         android:id="@+id/homeFragment"
         android:name="com.medapp.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_chooseHealthConcernFragment2"
+            app:destination="@id/chooseHealthConcernFragment2"
+            app:enterAnim="@anim/slide_up"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseHealthConcernFragment2"
+        android:name="com.medapp.ChooseHealthConcernFragment"
+        android:label="fragment_choose_health_concern"
+        tools:layout="@layout/fragment_choose_health_concern" >
+        <action
+            android:id="@+id/action_chooseHealthConcernFragment2_to_chooseDoctorFragment"
+            app:destination="@id/chooseDoctorFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseDoctorFragment"
+        android:name="com.medapp.ChooseDoctorFragment"
+        android:label="fragment_choose_doctor"
+        tools:layout="@layout/fragment_choose_doctor" >
+        <action
+            android:id="@+id/action_chooseDoctorFragment_to_flterDoctorListFragment"
+            app:destination="@id/flterDoctorListFragment"
+            app:enterAnim="@anim/slide_up"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/flterDoctorListFragment"
+        android:name="com.medapp.FilterDoctorListFragment"
+        android:label="fragment_flter_doctor_list"
+        tools:layout="@layout/fragment_flter_doctor_list" />
 </navigation>
