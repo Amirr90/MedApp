@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="itemListener"
+            type="com.medapp.interfaces.AdapterItemClick" />
+
+        <variable
+            name="date"
+            type="com.medapp.modal.DateModel" />
+    </data>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/dateCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:checkable="true"
+        android:clickable="true"
+        app:strokeWidth="1.5dp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:strokeColor="@color/black"
+        app:cardElevation="1dp"
+        android:focusable="true"
+        android:onClick="@{()->itemListener.onItemClick(date)}">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cv1"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:text="@{date.date}"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:text="@{date.availableSlots+` Slots available`}"
+                android:textColor="@color/colorSecondary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

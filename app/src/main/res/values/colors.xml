@@ -11,4 +11,6 @@
     <color name="colorPrimary">#1ECBE1</color>
     <color name="colorPrimaryDark">#1E6AE1</color>
     <color name="colorSecondary">#1EE196</color>
+    <color name="backgroundGrey">#EFEFF0</color>
+    <color name="darker_gray">#E4E2E2</color>
 </resources>

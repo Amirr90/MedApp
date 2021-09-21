@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/drawable/round_corners.xml" value="0.2255" />
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/drawable/round_corners_with_stroke.xml" value="0.2255" />
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/drawable/stroke_color.xml" value="0.2255" />
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/layout/doctors_appontment_slots.xml" value="0.2776268115942029" />
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/layout/doctors_time_slots.xml" value="0.5352697095435685" />
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/layout/doctors_view_for_appointment.xml" value="0.2776268115942029" />
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/layout/fragment_choose_doctor.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/layout/fragment_doctor_time_slot_for_booking.xml" value="0.447900466562986" />
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/layout/fragment_doctor_time_slot_for_booking2.xml" value="0.2776268115942029" />
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/layout/fragment_flter_doctor_list.xml" value="0.4783683559950556" />
+        <entry key="..\:/Users/Aamir/AndroidStudioProjects/MedAp/app/src/main/res/layout/nested_slot_view.xml" value="0.2776268115942029" />
         <entry key="..\:/Users/LENOVO/StudioProjects/MedApp/app/src/main/res/drawable/ic_menu_24dp.xml" value="0.189" />
         <entry key="..\:/Users/LENOVO/StudioProjects/MedApp/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/LENOVO/StudioProjects/MedApp/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />

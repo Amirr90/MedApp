@@ -41,10 +41,18 @@
             app:enterAnim="@anim/slide_up"
             app:popEnterAnim="@anim/fade_in"
             app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_chooseDoctorFragment_to_doctorTimeSlotForBooking2"
+            app:destination="@id/doctorTimeSlotForBooking2" />
     </fragment>
     <fragment
         android:id="@+id/flterDoctorListFragment"
         android:name="com.medapp.FilterDoctorListFragment"
         android:label="fragment_flter_doctor_list"
         tools:layout="@layout/fragment_flter_doctor_list" />
+    <fragment
+        android:id="@+id/doctorTimeSlotForBooking2"
+        android:name="com.medapp.DoctorTimeSlotForBooking"
+        android:label="fragment_doctor_time_slot_for_booking"
+        tools:layout="@layout/fragment_doctor_time_slot_for_booking" />
 </navigation>

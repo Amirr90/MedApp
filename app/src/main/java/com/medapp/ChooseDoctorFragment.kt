@@ -22,8 +22,10 @@ class ChooseDoctorFragment : Fragment(), AdapterItemClick {
     lateinit var binding: FragmentChooseDoctorBinding
     lateinit var adapter: ChooseDoctorAdapter
     lateinit var navController: NavController
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
 
         binding = FragmentChooseDoctorBinding.inflate(layoutInflater)
         return binding.root
@@ -41,7 +43,12 @@ class ChooseDoctorFragment : Fragment(), AdapterItemClick {
     private fun initHealthConcernData() {
 
         adapter = ChooseDoctorAdapter(this)
-        binding.recChooseDoctor.addItemDecoration(DividerItemDecoration(activity, LinearLayoutManager.VERTICAL))
+        binding.recChooseDoctor.addItemDecoration(
+            DividerItemDecoration(
+                activity,
+                LinearLayoutManager.VERTICAL
+            )
+        )
         binding.recChooseDoctor.adapter = adapter
         adapter.submitList(AppUtils.getDemoDocList())
 
@@ -50,7 +57,7 @@ class ChooseDoctorFragment : Fragment(), AdapterItemClick {
 
     override fun onItemClick(obj: Any) {
         Log.d(TAG, "onItemClick: $obj")
-        //navController.navigate(R.id.action_chooseHealthConcernFragment2_to_chooseDoctorFragment)
+        navController.navigate(R.id.action_chooseDoctorFragment_to_doctorTimeSlotForBooking2)
     }
 
 
